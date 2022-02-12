@@ -11,7 +11,8 @@ Create wav files from arbitrary binary data on your filesystem with Python
 
 ```poetry run python convert.py \
 --input_file='/path/to/input/file.pdf' \
---output_file='/path/to/output/file.wav'```
+--output_file='/path/to/output/file.wav'
+```
 
 You ought to be able to convert any file (up to about 6.5 Gb) to wav specification.
 
