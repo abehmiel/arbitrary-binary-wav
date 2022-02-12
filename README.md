@@ -16,7 +16,7 @@ poetry run python convert.py \
 --rate=44100
 ```
 
-THe optional `rate` cli argument defaults to `44100` Hz.  
+The optional `rate` cli argument defaults to `44100` Hz.  
 
 You ought to be able to convert any file (up to about 6.5 Gb) to wav specification.
 
