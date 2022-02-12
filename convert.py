@@ -24,7 +24,7 @@ def output_wave(path, frames, rate):
     write(byte_io, rate, frames)
     output_wav = byte_io.read()
 
-    output = wave.open(path,'wb')
+    output = wave.open(path, 'wb')
     output.setparams((2, 2, rate, 0, 'NONE', 'not compressed'))
     output.writeframes(output_wav)
     output.close()
