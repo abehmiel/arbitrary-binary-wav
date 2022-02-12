@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "bin-convert"
+name = "arbitrary-binary-wav"
 version = "0.1.0"
 description = "Convert arbitrary binary data to wav"
 authors = ["Abe Hmiel"]
