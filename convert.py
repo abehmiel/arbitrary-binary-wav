@@ -2,7 +2,6 @@
 import wave
 import click
 from io import BytesIO
-from os import stat
 from numpy import fromfile, int16
 from scipy.io.wavfile import write
 
@@ -12,8 +11,6 @@ from scipy.io.wavfile import write
 @click.option('--output_file')
 @click.option('--rate', default=44100)
 def output_sound(input_file, output_file, rate):
-
-    size = stat(input_file).st_size
 
     with open(input_file, 'rb') as file_data:
         frames = fromfile(file_data, dtype=int16, count=-1)
