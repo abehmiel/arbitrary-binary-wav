@@ -1,5 +1,5 @@
 # arbitrary-binary-wav
-Create wav files from arbitrary binary data with Python
+Create wav files from arbitrary binary data on your filesystem with Python
 
 ## Installation:
 
