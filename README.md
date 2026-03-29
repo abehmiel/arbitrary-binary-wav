@@ -3,17 +3,17 @@ Create wav files from arbitrary binary data on your filesystem with Python
 
 ## Installation:
 
-- Get poetry https://python-poetry.org/docs/#installation
+- Get uv https://docs.astral.sh/uv/getting-started/installation/
 
-- Install dependencies from the lockfile using: `poetry install`
+- Install dependencies from the lockfile using: `uv sync`
 
 ## Usage:
 
 ```
-poetry run python convert.py \
---input_file='/path/to/input/file.pdf' \
---output_file='/path/to/output/file.wav' \
---rate=44100
+uv run arbitrary-binary-wav \
+  --input_file /path/to/input/file.pdf \
+  --output_file /path/to/output/file.wav \
+  --rate 44100
 ```
 
 The optional `rate` cli argument defaults to `44100` Hz.  
